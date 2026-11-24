@@ -53,7 +53,9 @@ export async function buildApp(options: BuildOptions = {}): Promise<FastifyInsta
       servers: [{ url: "/" }],
     },
   });
-  await app.register(swaggerUi, { routePrefix: "/docs" });
+  if (!env.isProduction) {
+    await app.register(swaggerUi, { routePrefix: "/docs" });
+  }
 
   app.setErrorHandler((error, request, reply) => {
     const typedError = error as Error & { validation?: unknown; statusCode?: number };
@@ -104,7 +106,7 @@ export async function buildApp(options: BuildOptions = {}): Promise<FastifyInsta
   app.get("/", async () => ({
     name: "runestone-server",
     version: "0.1.0",
-    docs: "/docs",
+    docs: env.isProduction ? undefined : "/docs",
     configVersion: gameConfig.configVersion,
   }));
 

@@ -146,7 +146,7 @@ Content-Type: application/json
 }
 ```
 
-`devId` 相同会映射到同一玩家。正式环境禁止该登录方式。
+`devId` 相同会映射到同一玩家。正式环境默认禁止该登录方式；如确需在正式环境开放浏览器游客登录（例如前端联调），在 `.env` 设置 `ALLOW_GUEST_LOGIN=true` 后重启 API，关闭时删除该变量或设为 `false`。
 
 玩家身份分三层：
 

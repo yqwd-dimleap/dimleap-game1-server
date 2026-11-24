@@ -60,6 +60,7 @@ export const env = Object.freeze({
     .split(",")
     .map((value) => value.trim())
     .filter(Boolean),
+  allowGuestLogin: readOptional("ALLOW_GUEST_LOGIN") === "true",
   seasonId: readOptional("SEASON_ID"),
   wxAppId: readOptional("WX_APP_ID"),
   wxAppSecret: readOptional("WX_APP_SECRET"),

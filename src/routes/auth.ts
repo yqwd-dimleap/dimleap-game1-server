@@ -23,7 +23,7 @@ export async function registerAuthRoutes(app: FastifyInstance): Promise<void> {
       const { provider, code, devId } = request.body;
       let platformUid: string;
       if (provider === "dev") {
-        if (env.isProduction) return forbidden("正式环境禁止开发游客登录");
+        if (env.isProduction && !env.allowGuestLogin) return forbidden("正式环境禁止开发游客登录");
         platformUid = devId ?? `web-${randomUUID()}`;
       } else {
         if (!code) return badRequest("MISSING_PLATFORM_CODE", "缺少平台登录 code");
