@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1795496078335,
+      "tag": "0000_fantastic_beast",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1795496365533,
+      "tag": "0001_amused_sister_grimm",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1795496945582,
+      "tag": "0002_same_rocket_racer",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "runestone-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "config:sync": "node scripts/sync-game-config.mjs",
+    "bots:generate": "node scripts/generate-bots.mjs",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:migrate:prod": "node dist/db/migrate.js",
+    "ids:seed": "tsx src/db/seed-public-ids.ts",
+    "ids:seed:prod": "node dist/db/seed-public-ids.js",
+    "smoke": "node scripts/smoke-test.mjs",
+    "docker:dev:up": "./scripts/compose-dev.sh up -d --build",
+    "docker:dev:down": "./scripts/compose-dev.sh down",
+    "docker:dev:logs": "./scripts/compose-dev.sh logs -f api",
+    "reset:dev": "./scripts/reset-dev-data.sh",
+    "reset:dev:yes": "./scripts/reset-dev-data.sh --yes",
+    "docker:prod:up": "./scripts/compose-prod.sh up -d --build",
+    "docker:prod:down": "./scripts/compose-prod.sh down"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "@fastify/jwt": "^10.0.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "@fastify/swagger": "^9.5.1",
+    "@fastify/swagger-ui": "^6.1.5",
+    "@sinclair/typebox": "^0.34.41",
+    "dotenv": "^17.2.2",
+    "drizzle-orm": "^0.45.4",
+    "fastify": "^5.6.1",
+    "ioredis": "^5.7.0",
+    "mysql2": "^3.14.5",
+    "pino-pretty": "^13.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "drizzle-kit": "^0.31.4",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^5.1.1"
+  }
+}

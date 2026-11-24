@@ -1,0 +1,12 @@
+{
+  "configVersion": "a64f9d149f13333142b08d45225b8b956e795a1becbcc70af039a62cbe7ce03a",
+  "files": [
+    "ai_difficulty_config.json",
+    "hero_config.json",
+    "hero_level_config.json",
+    "item_config.json",
+    "rank_config.json",
+    "season_merit_reward.json",
+    "season_ranking_reward.json"
+  ]
+}

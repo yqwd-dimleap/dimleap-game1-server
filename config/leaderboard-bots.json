@@ -1,0 +1,602 @@
+[
+  {
+    "botId": "bot_001",
+    "nickname": "墨影100",
+    "avatarId": 1,
+    "netStars": 50
+  },
+  {
+    "botId": "bot_002",
+    "nickname": "长风101",
+    "avatarId": 2,
+    "netStars": 50
+  },
+  {
+    "botId": "bot_003",
+    "nickname": "山河102",
+    "avatarId": 3,
+    "netStars": 49
+  },
+  {
+    "botId": "bot_004",
+    "nickname": "青鸾103",
+    "avatarId": 4,
+    "netStars": 49
+  },
+  {
+    "botId": "bot_005",
+    "nickname": "照夜104",
+    "avatarId": 5,
+    "netStars": 48
+  },
+  {
+    "botId": "bot_006",
+    "nickname": "惊鸿105",
+    "avatarId": 6,
+    "netStars": 48
+  },
+  {
+    "botId": "bot_007",
+    "nickname": "听雨106",
+    "avatarId": 7,
+    "netStars": 47
+  },
+  {
+    "botId": "bot_008",
+    "nickname": "凌霄107",
+    "avatarId": 8,
+    "netStars": 47
+  },
+  {
+    "botId": "bot_009",
+    "nickname": "无咎108",
+    "avatarId": 1,
+    "netStars": 46
+  },
+  {
+    "botId": "bot_010",
+    "nickname": "星河109",
+    "avatarId": 2,
+    "netStars": 46
+  },
+  {
+    "botId": "bot_011",
+    "nickname": "飞白110",
+    "avatarId": 3,
+    "netStars": 45
+  },
+  {
+    "botId": "bot_012",
+    "nickname": "玄策111",
+    "avatarId": 4,
+    "netStars": 45
+  },
+  {
+    "botId": "bot_013",
+    "nickname": "归鸿112",
+    "avatarId": 5,
+    "netStars": 44
+  },
+  {
+    "botId": "bot_014",
+    "nickname": "扶摇113",
+    "avatarId": 6,
+    "netStars": 44
+  },
+  {
+    "botId": "bot_015",
+    "nickname": "清越114",
+    "avatarId": 7,
+    "netStars": 43
+  },
+  {
+    "botId": "bot_016",
+    "nickname": "空山115",
+    "avatarId": 8,
+    "netStars": 43
+  },
+  {
+    "botId": "bot_017",
+    "nickname": "墨影133",
+    "avatarId": 1,
+    "netStars": 42
+  },
+  {
+    "botId": "bot_018",
+    "nickname": "长风117",
+    "avatarId": 2,
+    "netStars": 42
+  },
+  {
+    "botId": "bot_019",
+    "nickname": "山河118",
+    "avatarId": 3,
+    "netStars": 41
+  },
+  {
+    "botId": "bot_020",
+    "nickname": "青鸾119",
+    "avatarId": 4,
+    "netStars": 41
+  },
+  {
+    "botId": "bot_021",
+    "nickname": "照夜120",
+    "avatarId": 5,
+    "netStars": 40
+  },
+  {
+    "botId": "bot_022",
+    "nickname": "惊鸿121",
+    "avatarId": 6,
+    "netStars": 40
+  },
+  {
+    "botId": "bot_023",
+    "nickname": "听雨122",
+    "avatarId": 7,
+    "netStars": 39
+  },
+  {
+    "botId": "bot_024",
+    "nickname": "凌霄123",
+    "avatarId": 8,
+    "netStars": 39
+  },
+  {
+    "botId": "bot_025",
+    "nickname": "无咎124",
+    "avatarId": 1,
+    "netStars": 38
+  },
+  {
+    "botId": "bot_026",
+    "nickname": "星河125",
+    "avatarId": 2,
+    "netStars": 38
+  },
+  {
+    "botId": "bot_027",
+    "nickname": "飞白126",
+    "avatarId": 3,
+    "netStars": 37
+  },
+  {
+    "botId": "bot_028",
+    "nickname": "玄策127",
+    "avatarId": 4,
+    "netStars": 37
+  },
+  {
+    "botId": "bot_029",
+    "nickname": "归鸿128",
+    "avatarId": 5,
+    "netStars": 36
+  },
+  {
+    "botId": "bot_030",
+    "nickname": "扶摇129",
+    "avatarId": 6,
+    "netStars": 36
+  },
+  {
+    "botId": "bot_031",
+    "nickname": "清越130",
+    "avatarId": 7,
+    "netStars": 35
+  },
+  {
+    "botId": "bot_032",
+    "nickname": "空山131",
+    "avatarId": 8,
+    "netStars": 35
+  },
+  {
+    "botId": "bot_033",
+    "nickname": "墨影149",
+    "avatarId": 1,
+    "netStars": 34
+  },
+  {
+    "botId": "bot_034",
+    "nickname": "长风150",
+    "avatarId": 2,
+    "netStars": 34
+  },
+  {
+    "botId": "bot_035",
+    "nickname": "山河134",
+    "avatarId": 3,
+    "netStars": 33
+  },
+  {
+    "botId": "bot_036",
+    "nickname": "青鸾135",
+    "avatarId": 4,
+    "netStars": 33
+  },
+  {
+    "botId": "bot_037",
+    "nickname": "照夜136",
+    "avatarId": 5,
+    "netStars": 32
+  },
+  {
+    "botId": "bot_038",
+    "nickname": "惊鸿137",
+    "avatarId": 6,
+    "netStars": 32
+  },
+  {
+    "botId": "bot_039",
+    "nickname": "听雨138",
+    "avatarId": 7,
+    "netStars": 31
+  },
+  {
+    "botId": "bot_040",
+    "nickname": "凌霄139",
+    "avatarId": 8,
+    "netStars": 31
+  },
+  {
+    "botId": "bot_041",
+    "nickname": "无咎140",
+    "avatarId": 1,
+    "netStars": 30
+  },
+  {
+    "botId": "bot_042",
+    "nickname": "星河141",
+    "avatarId": 2,
+    "netStars": 30
+  },
+  {
+    "botId": "bot_043",
+    "nickname": "飞白142",
+    "avatarId": 3,
+    "netStars": 29
+  },
+  {
+    "botId": "bot_044",
+    "nickname": "玄策143",
+    "avatarId": 4,
+    "netStars": 29
+  },
+  {
+    "botId": "bot_045",
+    "nickname": "归鸿144",
+    "avatarId": 5,
+    "netStars": 28
+  },
+  {
+    "botId": "bot_046",
+    "nickname": "扶摇145",
+    "avatarId": 6,
+    "netStars": 28
+  },
+  {
+    "botId": "bot_047",
+    "nickname": "清越146",
+    "avatarId": 7,
+    "netStars": 27
+  },
+  {
+    "botId": "bot_048",
+    "nickname": "空山147",
+    "avatarId": 8,
+    "netStars": 27
+  },
+  {
+    "botId": "bot_049",
+    "nickname": "墨影165",
+    "avatarId": 1,
+    "netStars": 26
+  },
+  {
+    "botId": "bot_050",
+    "nickname": "长风166",
+    "avatarId": 2,
+    "netStars": 26
+  },
+  {
+    "botId": "bot_051",
+    "nickname": "山河167",
+    "avatarId": 3,
+    "netStars": 25
+  },
+  {
+    "botId": "bot_052",
+    "nickname": "青鸾151",
+    "avatarId": 4,
+    "netStars": 24
+  },
+  {
+    "botId": "bot_053",
+    "nickname": "照夜152",
+    "avatarId": 5,
+    "netStars": 24
+  },
+  {
+    "botId": "bot_054",
+    "nickname": "惊鸿153",
+    "avatarId": 6,
+    "netStars": 23
+  },
+  {
+    "botId": "bot_055",
+    "nickname": "听雨154",
+    "avatarId": 7,
+    "netStars": 23
+  },
+  {
+    "botId": "bot_056",
+    "nickname": "凌霄155",
+    "avatarId": 8,
+    "netStars": 22
+  },
+  {
+    "botId": "bot_057",
+    "nickname": "无咎156",
+    "avatarId": 1,
+    "netStars": 22
+  },
+  {
+    "botId": "bot_058",
+    "nickname": "星河157",
+    "avatarId": 2,
+    "netStars": 21
+  },
+  {
+    "botId": "bot_059",
+    "nickname": "飞白158",
+    "avatarId": 3,
+    "netStars": 21
+  },
+  {
+    "botId": "bot_060",
+    "nickname": "玄策159",
+    "avatarId": 4,
+    "netStars": 20
+  },
+  {
+    "botId": "bot_061",
+    "nickname": "归鸿160",
+    "avatarId": 5,
+    "netStars": 20
+  },
+  {
+    "botId": "bot_062",
+    "nickname": "扶摇161",
+    "avatarId": 6,
+    "netStars": 19
+  },
+  {
+    "botId": "bot_063",
+    "nickname": "清越162",
+    "avatarId": 7,
+    "netStars": 19
+  },
+  {
+    "botId": "bot_064",
+    "nickname": "空山163",
+    "avatarId": 8,
+    "netStars": 18
+  },
+  {
+    "botId": "bot_065",
+    "nickname": "墨影181",
+    "avatarId": 1,
+    "netStars": 18
+  },
+  {
+    "botId": "bot_066",
+    "nickname": "长风182",
+    "avatarId": 2,
+    "netStars": 17
+  },
+  {
+    "botId": "bot_067",
+    "nickname": "山河183",
+    "avatarId": 3,
+    "netStars": 17
+  },
+  {
+    "botId": "bot_068",
+    "nickname": "青鸾184",
+    "avatarId": 4,
+    "netStars": 16
+  },
+  {
+    "botId": "bot_069",
+    "nickname": "照夜168",
+    "avatarId": 5,
+    "netStars": 16
+  },
+  {
+    "botId": "bot_070",
+    "nickname": "惊鸿169",
+    "avatarId": 6,
+    "netStars": 15
+  },
+  {
+    "botId": "bot_071",
+    "nickname": "听雨170",
+    "avatarId": 7,
+    "netStars": 15
+  },
+  {
+    "botId": "bot_072",
+    "nickname": "凌霄171",
+    "avatarId": 8,
+    "netStars": 14
+  },
+  {
+    "botId": "bot_073",
+    "nickname": "无咎172",
+    "avatarId": 1,
+    "netStars": 14
+  },
+  {
+    "botId": "bot_074",
+    "nickname": "星河173",
+    "avatarId": 2,
+    "netStars": 13
+  },
+  {
+    "botId": "bot_075",
+    "nickname": "飞白174",
+    "avatarId": 3,
+    "netStars": 13
+  },
+  {
+    "botId": "bot_076",
+    "nickname": "玄策175",
+    "avatarId": 4,
+    "netStars": 12
+  },
+  {
+    "botId": "bot_077",
+    "nickname": "归鸿176",
+    "avatarId": 5,
+    "netStars": 12
+  },
+  {
+    "botId": "bot_078",
+    "nickname": "扶摇177",
+    "avatarId": 6,
+    "netStars": 11
+  },
+  {
+    "botId": "bot_079",
+    "nickname": "清越178",
+    "avatarId": 7,
+    "netStars": 11
+  },
+  {
+    "botId": "bot_080",
+    "nickname": "空山179",
+    "avatarId": 8,
+    "netStars": 10
+  },
+  {
+    "botId": "bot_081",
+    "nickname": "墨影197",
+    "avatarId": 1,
+    "netStars": 10
+  },
+  {
+    "botId": "bot_082",
+    "nickname": "长风198",
+    "avatarId": 2,
+    "netStars": 9
+  },
+  {
+    "botId": "bot_083",
+    "nickname": "山河199",
+    "avatarId": 3,
+    "netStars": 9
+  },
+  {
+    "botId": "bot_084",
+    "nickname": "青鸾200",
+    "avatarId": 4,
+    "netStars": 8
+  },
+  {
+    "botId": "bot_085",
+    "nickname": "照夜201",
+    "avatarId": 5,
+    "netStars": 8
+  },
+  {
+    "botId": "bot_086",
+    "nickname": "惊鸿185",
+    "avatarId": 6,
+    "netStars": 7
+  },
+  {
+    "botId": "bot_087",
+    "nickname": "听雨186",
+    "avatarId": 7,
+    "netStars": 7
+  },
+  {
+    "botId": "bot_088",
+    "nickname": "凌霄187",
+    "avatarId": 8,
+    "netStars": 6
+  },
+  {
+    "botId": "bot_089",
+    "nickname": "无咎188",
+    "avatarId": 1,
+    "netStars": 6
+  },
+  {
+    "botId": "bot_090",
+    "nickname": "星河189",
+    "avatarId": 2,
+    "netStars": 5
+  },
+  {
+    "botId": "bot_091",
+    "nickname": "飞白190",
+    "avatarId": 3,
+    "netStars": 5
+  },
+  {
+    "botId": "bot_092",
+    "nickname": "玄策191",
+    "avatarId": 4,
+    "netStars": 4
+  },
+  {
+    "botId": "bot_093",
+    "nickname": "归鸿192",
+    "avatarId": 5,
+    "netStars": 4
+  },
+  {
+    "botId": "bot_094",
+    "nickname": "扶摇193",
+    "avatarId": 6,
+    "netStars": 3
+  },
+  {
+    "botId": "bot_095",
+    "nickname": "清越194",
+    "avatarId": 7,
+    "netStars": 3
+  },
+  {
+    "botId": "bot_096",
+    "nickname": "空山195",
+    "avatarId": 8,
+    "netStars": 2
+  },
+  {
+    "botId": "bot_097",
+    "nickname": "墨影213",
+    "avatarId": 1,
+    "netStars": 2
+  },
+  {
+    "botId": "bot_098",
+    "nickname": "长风214",
+    "avatarId": 2,
+    "netStars": 1
+  },
+  {
+    "botId": "bot_099",
+    "nickname": "山河215",
+    "avatarId": 3,
+    "netStars": 1
+  },
+  {
+    "botId": "bot_100",
+    "nickname": "青鸾216",
+    "avatarId": 4,
+    "netStars": 0
+  }
+]

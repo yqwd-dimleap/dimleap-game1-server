@@ -1,0 +1,24 @@
+{
+  "seasonId": "2026S1",
+  "initialCoins": 2000,
+  "defaultNicknamePrefix": "主公",
+  "battle": {
+    "ticketTtlSeconds": 7200,
+    "minimumDurationSeconds": 10,
+    "maximumDurationSeconds": 7200,
+    "win": {
+      "coins": 200,
+      "stars": 1,
+      "merit": 10
+    },
+    "loss": {
+      "coins": 100,
+      "stars": -1,
+      "merit": 0
+    }
+  },
+  "leaderboard": {
+    "limit": 100,
+    "cacheTtlSeconds": 30
+  }
+}
