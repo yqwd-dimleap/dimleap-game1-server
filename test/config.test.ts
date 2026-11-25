@@ -22,11 +22,10 @@ describe("GameConfig", () => {
     }
   });
 
-  it("opens exactly the four configured starter heroes", () => {
-    const unlocked = Object.values(config.heroes)
-      .filter((hero) => hero.initially_unlocked === 1)
-      .map((hero) => hero.key);
-    expect(unlocked).toEqual(["swordsman", "archer", "cavalry", "shield"]);
+  it("unlocks every configured hero by default", () => {
+    const ordered = Object.values(config.heroes).sort((a, b) => a.tableId - b.tableId);
+    const unlocked = ordered.filter((hero) => hero.initially_unlocked === 1).map((hero) => hero.key);
+    expect(unlocked).toEqual(ordered.map((hero) => hero.key));
   });
 
   it("uses the confirmed battle rewards", () => {

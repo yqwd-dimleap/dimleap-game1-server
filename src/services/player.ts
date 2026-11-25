@@ -1,4 +1,4 @@
-import { and, eq, isNull, sql } from "drizzle-orm";
+import { and, eq, inArray, isNull, sql } from "drizzle-orm";
 import { db } from "../db/client.js";
 import {
   authIdentities,
@@ -6,9 +6,10 @@ import {
   playerPublicIds,
   players,
   rewardClaims,
+  type HeroProgressRow,
   type PlayerRow,
 } from "../db/schema.js";
-import { gameConfig } from "../config/game.js";
+import { gameConfig, type HeroKey } from "../config/game.js";
 import { AppError } from "../lib/errors.js";
 import { playerIdGenerator } from "../lib/ids.js";
 import { parseJson } from "../lib/json.js";
@@ -200,9 +201,30 @@ export async function updatePlayerProfile(
     .where(eq(players.id, playerId));
 }
 
+/**
+ * 默认解锁来自 hero_config，但 hero_progress 只在建号时写一次。
+ * 每次下发玩家快照时按当前配置补齐，让配置表的 initially_unlocked 改动对老账号生效。
+ * 只做 0 -> 1：玩家已解锁的英雄不会因为配置改动被锁回去。
+ */
+async function applyConfiguredUnlocks(playerId: bigint, heroes: HeroProgressRow[]): Promise<void> {
+  const pending = heroes.filter((hero) => !hero.unlocked && gameConfig.heroes[hero.heroKey as HeroKey]?.initially_unlocked === 1);
+  if (pending.length === 0) return;
+  await db
+    .update(heroProgress)
+    .set({ unlocked: true })
+    .where(
+      and(
+        eq(heroProgress.playerId, playerId),
+        inArray(heroProgress.heroKey, pending.map((hero) => hero.heroKey)),
+      ),
+    );
+  for (const hero of pending) hero.unlocked = true;
+}
+
 export async function playerSnapshot(playerId: bigint) {
   const player = await loadCurrentPlayer(playerId);
   const heroes = await db.select().from(heroProgress).where(eq(heroProgress.playerId, playerId));
+  await applyConfiguredUnlocks(playerId, heroes);
   const claims = await db
     .select({ rewardType: rewardClaims.rewardType, rewardId: rewardClaims.rewardId })
     .from(rewardClaims)
