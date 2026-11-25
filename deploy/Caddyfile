@@ -2,3 +2,11 @@
 	encode zstd gzip
 	reverse_proxy api:3000
 }
+
+# H5 / web 端静态站点（含 remote 资源包），文件由 /srv/0ygame-web 挂载进来
+{$WEB_DOMAIN} {
+	root * /srv/web
+	encode zstd gzip
+	try_files {path} {path}/ /index.html
+	file_server
+}

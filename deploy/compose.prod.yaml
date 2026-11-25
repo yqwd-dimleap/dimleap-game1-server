@@ -67,11 +67,13 @@ services:
     image: caddy:2.9-alpine
     environment:
       API_DOMAIN: ${API_DOMAIN}
+      WEB_DOMAIN: ${WEB_DOMAIN}
     ports:
       - "80:80"
       - "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - /srv/0ygame-web:/srv/web:ro
       - runestone_caddy_data:/data
       - runestone_caddy_config:/config
     depends_on:
