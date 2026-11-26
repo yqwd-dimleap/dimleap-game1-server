@@ -35,7 +35,7 @@ const EMPTY: AssetManifest = Object.freeze({
  * 文件缺失视为“没有服务端覆盖”，返回空清单；内容非法则抛错，由路由降级为空清单并告警。
  */
 export class AssetManifestStore {
-  private cached?: { mtimeMs: number; manifest: AssetManifest };
+  private cached: { mtimeMs: number; manifest: AssetManifest } | undefined;
 
   constructor(
     private readonly file = process.env.ASSET_MANIFEST_FILE ?? path.resolve(process.cwd(), "config", "assets.json"),
