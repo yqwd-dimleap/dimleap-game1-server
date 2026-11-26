@@ -9,6 +9,8 @@ import { env } from "./config/env.js";
 import { gameConfig } from "./config/game.js";
 import { AppError } from "./lib/errors.js";
 import { OptionalRedis } from "./lib/redis.js";
+import { AssetManifestStore } from "./config/assets.js";
+import { registerAssetRoutes } from "./routes/assets.js";
 import { registerAuthRoutes } from "./routes/auth.js";
 import { registerBattleRoutes } from "./routes/battles.js";
 import { registerHealthRoutes } from "./routes/health.js";
@@ -93,6 +95,7 @@ export async function buildApp(options: BuildOptions = {}): Promise<FastifyInsta
   await registerHealthRoutes(app, cache);
   await app.register(
     async (api) => {
+      await registerAssetRoutes(api, new AssetManifestStore());
       await registerAuthRoutes(api);
       await registerPlayerRoutes(api);
       await registerHeroRoutes(api);
